@@ -1,0 +1,319 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+    list-style:circle;
+    text-align: left;
+}
+
+.hero-section {
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    min-height: 35vh;
+    background-color: #FFF19B;
+    gap: 70px;
+    box-shadow: 1px 1px 10px #dfe1fd;
+    width: 100%;
+}
+
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: HelloFont;
+  src: url(sansation_light.woff);
+}
+
+.hero-text {
+    position: relative;
+}
+
+h1 {
+    font-family: "Poiret One", sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Poiret One", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+li {
+    font-family: "Poiret One", sans-serif;
+    font-size: 20px;
+}
+
+.bluetext {
+    color: #3D45AA;
+    font-weight: bold;
+}
+
+.redtext {
+    color:#DA3D20;
+    font-weight: bold;
+
+}
+
+/* ---------------------->>>>>Profile picture art<<<<<---------------------------- */
+
+.profile-picture {
+    position: relative;
+    margin-top: 50px;
+}
+
+.face {
+    position: relative;
+    background: linear-gradient(to right, #f8e7d0,#dbc6a9 );
+    height: 300px;
+    width: 300px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+    overflow: hidden;
+}
+
+
+/* ----------------------eyes---------------------------- */
+.eye {
+    position: absolute;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    top: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.eyelid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f8e7d0,#dbc6a9);
+    top: -100%;
+    left: 0;
+
+    animation: blink 6s infinite;
+}
+
+@keyframes blink {
+
+    0%, 92%, 100% {
+        top: -100%;   /* open */
+    }
+
+    95% {
+        top: 0;       /* closed */
+    }
+}
+
+.eye.left {
+    left: 150px;
+}
+
+.eye.right {
+    left: 40px;
+}
+
+.iris-left {
+    position: absolute;
+    background-color: #b8f7f7;
+    height: 30px;
+    width: 28px;
+    border-radius: 50%;
+    top: 4px;
+    left: 2px
+}
+
+.iris-right {
+    position: absolute;
+    background-color: #b8f7f7;
+    height: 30px;
+    width: 28px;
+    border-radius: 50%;
+    top: 4px;
+    left: 2px;
+}
+
+.pupil-left {
+    position: absolute;
+    background-color: black;
+    height: 20px;
+    width:18px;
+    border-radius: 50%;
+    top: 4px;
+    left: 3px;
+}
+
+.pupil-right {
+    position: absolute;
+    background-color: black;
+    height: 20px;
+    width:18px;
+    border-radius: 50%;
+    top: 4px;
+    left: 3px;
+}
+
+/* -----------------------smile-------------------------- */
+.mouth {
+    position: absolute;
+    background-color: rgb(88, 88, 88);
+    height: 60px;
+    width: 120px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 50%;
+    top: 180px;
+    left: 55px;
+    overflow: hidden;
+}
+
+.tounge {
+    position: absolute;
+    background-color: #DA3D20;
+    height: 50px;
+    width: 100px;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 50%;
+    left: 30px;
+    top: 20px;
+    overflow: hidden;
+}
+
+/* ---------------------------hair + ear------------------------ */
+
+
+.back-hair-right {
+    position: absolute;
+    background: linear-gradient(to left, #F8843F, #F8843F, #753c1a);
+    height: 320px;
+    width: 320px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+    left: 20px ;
+    bottom:1px
+
+}
+
+.back-hair-left {
+    position: absolute;
+    background: linear-gradient(to right, #F8843F,  #753c1a);
+    height: 300px;
+    width: 320px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 80%;
+    right: 10px;
+}
+
+.frown {
+    position: absolute;
+    background: linear-gradient(to left, #F8843F,  #F8843F,#753c1a);
+    height: 300px;
+    width: 320px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 20%;
+    right: 10px;
+    left: 20px;
+    bottom: 210px;
+}
+
+.ear {
+    position: absolute;
+    background: linear-gradient(to left, #f8e7d0,#a07b48 );
+    height: 90px;
+    width: 80px;
+    left:250px;
+    top:90px;
+    border-radius: 50%;
+}
+
+.piercing {
+   position: absolute;
+    background-color: grey;
+    height: 18px;
+    width: 8px;
+    left:315px;
+    top:100px;
+    transform: rotate(45deg);
+}
+
+.hair-front {
+    position: absolute;
+    background: linear-gradient(to right, #F8843F,  #F8843F, #c96f3b);
+    height: 300px;
+    width: 90px;
+    right: 10px;
+    left: 220px;  
+}
+
+
+/* ---------------------->>>>>Introduction Section<<<<<---------------------------- */
+
+.introduction-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    max-height: 450px;
+}
+
+/* ---------------------->>>>>Skills Section<<<<<---------------------------- */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #FFF19B;
+    gap: 0px;
+}
+
+.skill-title {
+    grid-column: span 4;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.skill-bubble {
+    background-color: #454dbe;
+    color: white;
+    list-style-type: none;
+    height: 250px;
+    width: auto;
+    padding: 30px;
+}
+
+.skill-bubble > h2 {
+    font-weight:bolder;
+}
+
+.one {
+    background-color: #F8843F;
+}
+
+.two {
+    background-color: #3D45AA;
+}
+
+.three {
+    background-color: #DA3D20;
+}
+
+.four {
+    background-color: rgb(88, 88, 88);
+}
